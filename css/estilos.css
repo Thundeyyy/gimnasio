@@ -9,6 +9,10 @@
 body {
     background-image: url("../img/fondo.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
 }
 
 .menu {
@@ -18,10 +22,118 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
+/*mueve el contenido del main (formulario) al centro*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.formulario {
+    color: white;
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    width: 270px;
+    padding: 25px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+form label {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+form input, form select {
+    color: rgb(0, 0, 0);
+    border: 3px;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+form select {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.395);
+
+}
+
+form button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(223, 220, 48);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
 nav ul {
     display: flex;
     gap: 40px;
+}
+
+nav ul li a {
+    list-style: none;
+    color: black;
+    font-weight: bold;
+
+    color: black;
+}
+
+
+
+.registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 540px) {
+
+    body {
+        background-image: url("../img/fondo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+
+    
+    }
+
+    .menu {
+        margin: auto;
+        
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+
+    }
 }
